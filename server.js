@@ -66,7 +66,7 @@ app.use((req, res, next) => {
 })
 
 
-http.listen(PORT,'192.168.1.20', () => {
+http.listen(PORT, () => {
     console.log(`listening on *:${PORT}`);
 });
 
