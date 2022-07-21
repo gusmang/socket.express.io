@@ -4,12 +4,14 @@
   "description": "",
   "main": "server.js",
   "engines":{
-    "node" : "14.x"
+    "node" : "16.x"
   },
   "scripts": {
-    "start" : "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "restart": "nodemon server.js --max-old-space-size=2048"
+    "start" : "node server.js"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "git+https://github.com/gusmang/socket.express.io.git"
   },
   "author": "",
   "license": "ISC",
