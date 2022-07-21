@@ -2,7 +2,7 @@
 // var http = require('http').createServer(app);
 // const cors = require('cors');
 
-const PORT = 8090;
+const PORT = 5050;
 var options={
     cors:true,
     origins:["http://127.0.0.1:8080"],
@@ -21,9 +21,6 @@ const cors = require('cors');
 app.use(cors());
 const http = require('http').createServer(app);
 const { Server } = require('socket.io');
-
-
-
 
 //const server = http.createServer(app);
 //  
@@ -111,11 +108,10 @@ io.on('connection', (socket) => { // socket object may be used to send specific 
 
 });
 
-
-
 /**
  * @description This methos retirves the static channels
  */
+
 app.get('/getChannels', (req, res) => {
     res.json({
         channels: STATIC_CHANNELS
